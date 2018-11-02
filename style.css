@@ -10,6 +10,10 @@ body {
    background-color: #ccc;
  }
 
+ body {
+   font-size: 20px;
+ }
+
  /* Specific to Card Container */
  .card {
    width: 35em;
@@ -31,23 +35,27 @@ body {
  }
 
  .card header{
-   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+   background-image: linear-gradient(to bottom,black, darkgreen);
    border-radius: 1.5em 1.5em 0 0;
  }
 
  .card footer{
-   background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+   background-image: linear-gradient(to bottom,darkgreen, black);
    border-radius: 0 0 1.5em 1.5em;
  }
 
  .card header h2 {
    font-size: 2em;
    line-height: 1.5;
+   text-align: center;
+   color: darkgray;
 }
 
  .card footer p{
-    font-size: 1.5em;
-    line-height: 2;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    color: darkgray;
  }
 
  /* Specific to main contents */
@@ -59,10 +67,11 @@ body {
  .card article img {
    max-height: 100%;
    float: right;
+   margin-right: 0.5em;
  }
 
  .card article p {
     padding: 1.5em;
     padding-top: 2em;
-    color: silver;
+    color: darkgray;
  }
